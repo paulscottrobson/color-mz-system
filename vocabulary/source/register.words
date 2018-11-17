@@ -1,0 +1,44 @@
+; ***************************************************************************************
+; ***************************************************************************************
+;
+;		Name : 		register.words
+;		Author :	Paul Robson (paul@robsons.org.uk)
+;		Date : 		17th November 2018
+;		Purpose :	Register operators
+;
+; ***************************************************************************************
+; ***************************************************************************************
+
+; @generator swap
+	ex 		de,hl
+; @end
+
+; @generator a>b
+	ld 		d,h
+	ld 		e,l
+; @end
+	
+; @generator b>a
+	ld 		h,d
+	ld 		l,e
+; @end
+
+; @generator a>c
+	ld 		b,h
+	ld 		c,l
+; @end
+
+; @generator c>a
+	ld 		h,b
+	ld 		l,c
+; @end
+
+; @generator b>c
+	ld 		b,d
+	ld 		c,e
+; @end
+
+; @generator c>b
+	ld 		d,b
+	ld 		e,c
+; @end

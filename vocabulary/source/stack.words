@@ -1,0 +1,56 @@
+; ***************************************************************************************
+; ***************************************************************************************
+;
+;		Name : 		stack.words
+;		Author :	Paul Robson (paul@robsons.org.uk)
+;		Date : 		17th November 2018
+;		Purpose :	Stack operators
+;
+; ***************************************************************************************
+; ***************************************************************************************
+
+; @generator a>r 
+	push 	hl
+; @end
+
+; @generator b>r 
+	push 	de
+; @end
+
+; @generator c>r 
+	push 	bc
+; @end
+
+; @generator ab>r 
+	push 	de
+	push 	hl
+; @end
+
+; @generator abc>r 
+	push 	bc
+	push 	de
+	push 	hl
+; @end
+
+; @generator r>a 
+	pop 	hl
+; @end
+
+; @generator r>b 
+	pop 	de
+; @end
+
+; @generator r>c 
+	pop 	bc
+; @end
+
+; @generator r>ab 
+	pop 	hl
+	pop 	de
+; @end
+
+; @generator r>abc 
+	pop 	hl
+	pop 	de
+	pop 	bc
+; @end
